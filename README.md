@@ -32,7 +32,19 @@ git clone https://github.com/Pythoneiro/Conda-Menu.git
 python Conda-Menu
 ```
 
+## Set menu language
+
+For now, the application is displayed on English or Spanish. It uses the system locale to determine the language, being English the default language.
+
+If your system locale is set to "es_xx" but you want to force it to be in English, or your locale is not "es_xx", you can force it by setting a system env variable called "CONDAMENU_LANG", with the value "es" to set it to Spanish, or any other value to set it to the default language (English).
+
 ## How does it work?
 
 The application call for conda commands (using subprocess lib) to list virtual envs, create or remove them.
 Whenever an interactive prompt is required (when creating, removing or activating a virtual env), a new Tmux session is created and attached to.
+
+## TODO
+
+- Recycle the list of existing virtual envs across the functions that require them, saving a few ms of loading between sub-menus
+- Option to massive-remove envs
+- Add hotkeys
