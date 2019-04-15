@@ -8,7 +8,7 @@ setup(
     long_description="A console menu to manage your Conda virtual envs: "
                      "create new envs, view created envs, activate an env, delete an env. "
                      "Menus made with bullet (https://github.com/Mckinsey666/bullet). Working (tested) on Linux only.",
-    url="https://github.com/Pythoneiro/Conda-Menu",
+    url="https://github.com/David-Lor/Conda-Menu",
     packages=["conda_menu"],
     install_requires=["bullet"],
     entry_points={

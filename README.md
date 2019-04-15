@@ -5,7 +5,7 @@ A console menu to manage your Conda virtual envs: create new envs, view created 
 ## Installing
 
 ```bash
-git clone https://github.com/Pythoneiro/Conda-Menu.git
+git clone https://github.com/David-Lor/Conda-Menu.git
 cd Conda-Menu
 python setup.py install
 ```
@@ -28,7 +28,7 @@ condamenu
 Or you can run directly without installing it:
 
 ```bash
-git clone https://github.com/Pythoneiro/Conda-Menu.git
+git clone https://github.com/David-Lor/Conda-Menu.git
 python Conda-Menu
 ```
 
