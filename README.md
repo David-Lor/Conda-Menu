@@ -43,6 +43,11 @@ If your system locale is set to "es_xx" but you want to force it to be in Englis
 The application call for conda commands (using subprocess lib) to list virtual envs, create or remove them.
 Whenever an interactive prompt is required (when creating, removing or activating a virtual env), a new Tmux session is created and attached to.
 
+## Changelog
+
+- 1.0.0 - Initial release
+- 1.0.1 - Avoid duplicates on virtual env choosing sub-menu, due to a "conda env list" bug
+
 ## TODO
 
 - Recycle the list of existing virtual envs across the functions that require them, saving a few ms of loading between sub-menus

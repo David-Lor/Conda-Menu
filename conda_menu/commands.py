@@ -83,5 +83,6 @@ def get_envs():
             line = line.split()
             name = line[0]
             route = line[-1]
-            envs.append((name, route))
+            if route not in [env[1] for env in envs]:  # Avoid duplicates due to a conda bug on "conda env list"
+                envs.append((name, route))
     return envs
