@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="condamenu",
-    version="1.0.1",
+    version="1.0.2",
     author="David Lorenzo",
     description="A terminal menu to manage Conda/Miniconda virtual envs",
     long_description="A console menu to manage your Conda virtual envs: "

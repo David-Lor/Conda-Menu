@@ -47,6 +47,7 @@ Whenever an interactive prompt is required (when creating, removing or activatin
 
 - 1.0.0 - Initial release
 - 1.0.1 - Avoid duplicates on virtual env choosing sub-menu, due to a "conda env list" bug when using miniconda
+- 1.0.2 - Avoid invalid names on Tmux sessions when a virtual env name contains a dot ('.')
 
 ## TODO
 

@@ -13,6 +13,7 @@ def activate_env(virtualenv_name):
     :param virtualenv_name: name of the virtual env
     """
     session_name = "condamenu-activated-" + str(int(datetime.now().timestamp())) + "-" + virtualenv_name
+    session_name = session_name.replace(".", "")
     subprocess.call(["tmux", "new-session", "-d", "-s", session_name])
     subprocess.call(["tmux", "send-keys", "-t", session_name, "conda activate " + virtualenv_name, "ENTER"])
     subprocess.call(["tmux", "attach", "-t", session_name])
@@ -28,6 +29,7 @@ def new_env(virtualenv_name, virtualenv_packages):
     :param virtualenv_packages: package/s to install
     """
     session_name = "condamenu-newenv-" + str(int(datetime.now().timestamp())) + "-" + virtualenv_name
+    session_name = session_name.replace(".", "")
     subprocess.call(["tmux", "new-session", "-d", "-s", session_name])
     subprocess.call([
         "tmux", "send-keys", "-t", session_name,
@@ -51,6 +53,7 @@ def delete_env(virtualenv_name):
     :param virtualenv_name: custom name of the env to delete
     """
     session_name = "condamenu-rmenv-" + str(int(datetime.now().timestamp())) + "-" + virtualenv_name
+    session_name = session_name.replace(".", "")
     subprocess.call(["tmux", "new-session", "-d", "-s", session_name])
     subprocess.call([
         "tmux", "send-keys", "-t", session_name,
